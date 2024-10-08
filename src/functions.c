@@ -1,17 +1,13 @@
-#include <string.h>
-#include <stdlib.h>
 #include <stdio.h>
-
-void callme(char s[])
-{
-    printf("%s", s);
-}
+#include <string.h>
 
 int main()
 {
-    // char *st = "aeragt";
-    char sst[] = "aeragt";
-    // callme(st);
-    callme(sst);
+    char *str[] = {"Frogs", "Do", "Not", "Die", "They", "Croak!"};
+    printf("%s, %d", *(str + 1), strlen(str[0]));
+    int a = NULL;
+    if (a == NULL)
+        perror("inside error");
+
     return 0;
 }
